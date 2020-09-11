@@ -27,5 +27,10 @@ dfs란 재귀로 문제를 푸는 것을 의미
 
 ```
 
+-python
+```
+
+```
+
 ### Reference
   [N-Queen 알고리즘문제풀이](https://www.youtube.com/watch?v=ltm-JX5R1pA)
