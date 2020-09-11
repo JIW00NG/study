@@ -76,19 +76,20 @@ int go(int y, int x) {
 	}
 
 	//말의 위치 기억
-	vy[y] = y, vx[x] = x;
+	vy[y] = y, vx[y] = x;
 
 	int r = 0;
 	for (int i = 0; i < N; i++) {
 		r += go(y + 1, i);
 	}
+	return r;
 }
 
 int main(void) {
 	scanf("%d", &N);
 	int r = 0;
 	for (int i = 0; i < N; i++) {
-		r += go(0, 1);
+		r += go(0, i);
 	}
 	printf("%d\n", r);
 	return 0;
