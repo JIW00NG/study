@@ -1,4 +1,4 @@
-## [백트래킹 (Backtracking)](https://ko.wikipedia.org/wiki/%ED%87%B4%EA%B0%81%EA%B2%80%EC%83%89)
+## 백트래킹 (Backtracking)
 -백트래킹에 대해 알아보자
 
 
