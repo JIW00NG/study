@@ -40,6 +40,8 @@
 - [백트래킹]()
 #### 풀이
 
+![unnamed](https://user-images.githubusercontent.com/56468120/92908986-ad9d6580-f461-11ea-87ff-950c6d0097cb.png)
+
 - java
 ```
 
