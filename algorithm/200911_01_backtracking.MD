@@ -37,7 +37,7 @@
 - 첫째 줄에 퀸 N개를 서로 공격할 수 없게 놓는 경우의 수를 출력한다.
 #### 알고리즘 분류
 - [부르트 포스](https://gusdnd852.tistory.com/167?category=748315)
-- [백트래킹]()
+- 백트래킹
 #### 풀이
 
 ![unnamed](https://user-images.githubusercontent.com/56468120/92909129-d02f7e80-f461-11ea-9a4b-a27cf919c5c5.png)
