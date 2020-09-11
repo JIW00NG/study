@@ -1,6 +1,6 @@
-## 백트래킹 (Backtracking)
+## [백트래킹 (Backtracking)](https://ko.wikipedia.org/wiki/%ED%87%B4%EA%B0%81%EA%B2%80%EC%83%89)
 -백트래킹에 대해 알아보자
-[위키백과](https://ko.wikipedia.org/wiki/%ED%87%B4%EA%B0%81%EA%B2%80%EC%83%89)
+
 
 ### 정의
 - 백트래킹(backtracking, 퇴각검색)은 한정 조건을 가진 문제를 풀려는 전략이다.
@@ -48,5 +48,6 @@
 ```
 
 ### Reference
-  [백트래킹 위키백과](https://ko.wikipedia.org/wiki/%ED%87%B4%EA%B0%81%EA%B2%80%EC%83%89)
-  [N-Queen 알고리즘문제풀이](https://www.youtube.com/watch?v=ltm-JX5R1pA)
+  - [백트래킹 위키백과](https://ko.wikipedia.org/wiki/%ED%87%B4%EA%B0%81%EA%B2%80%EC%83%89)
+  
+  - [N-Queen 알고리즘문제풀이](https://www.youtube.com/watch?v=ltm-JX5R1pA)
