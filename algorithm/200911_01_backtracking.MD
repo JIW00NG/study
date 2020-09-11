@@ -44,7 +44,6 @@
 
 - C
 ```
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -58,13 +57,13 @@ int go(int y, int x) {
 	//가지치기(backtracking)
 	for (int i = 0; i < y; i++) {
 		//직선겹침
-		if (y == vy[i]) {
+		if (y == vy[i]) { //가로 겹침
 			return 0;
 		}
-		if (x == vx[i]) {
+		if (x == vx[i]) { //세로 겹침
 			return 0;
 		}
-		if (abs(x - vx[i]) == abs(y - vy[i])) {
+		if (abs(x - vx[i]) == abs(y - vy[i])) { //대각겹침
 			return 0;
 		}
 	}
