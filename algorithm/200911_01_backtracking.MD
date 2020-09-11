@@ -18,8 +18,8 @@ dfs란 재귀로 문제를 푸는 것을 의미
 #### 출력
 - 첫째 줄에 퀸 N개를 서로 공격할 수 없게 놓는 경우의 수를 출력한다.
 #### 알고리즘 분류
-- [부르트 포스 (Brute Force, Naive Search)](https://gusdnd852.tistory.com/167?category=748315)
-- 백트래킹
+- [부르트 포스](https://gusdnd852.tistory.com/167?category=748315)
+- [백트래킹]()
 <br><br>
 
 ### Reference
