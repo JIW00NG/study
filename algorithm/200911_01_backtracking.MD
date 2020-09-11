@@ -98,6 +98,46 @@ int main(void) {
 
 - python
 ```
+import sys
+
+vx = [0] * (15 + 1)
+vy = [0] * (15 + 1)
+
+
+def go(y, x):
+    # 가치치기(backtracking)
+    for i in range(y):
+
+        # 직선겹침
+        if y == vy[i]:  # 가로겹침
+            return 0
+        if x == vx[i]:  # 세로겹침
+            return 0
+        if abs(x - vx[i]) == abs(y - vy[i]):  # 대각겹침
+            return 0
+
+    # 종료조건
+    if y == N - 1:
+        '''말단에서 퀸 배열이 성공적인지 체크
+        만약 성공적이면 리턴 1'''
+        return 1
+
+    # 말의 위치 기억
+    vy[y] = y
+    vx[y] = x
+
+    r = 0
+    for j in range(N):
+        r = r + go(y + 1, j)
+
+    return r
+
+
+N = int(sys.stdin.readline())
+r = 0
+for i in range(N):
+    r = r + go(0, i)
+print(str(r) + "\n")
 
 ```
 
