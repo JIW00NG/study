@@ -21,4 +21,4 @@ dfs란 재귀로 문제를 푸는 것을 의미
 <br><br>
 
 ### Reference
--[#백준 9663 #N-Queen #알고리즘문제풀이 #백트래킹 #algorithm #backtracking #가지치기](https://www.youtube.com/watch?v=ltm-JX5R1pA)
+-[#백준 9663 #N-Queen #알고리즘문제풀이 #백트래킹 #algorithm #backtracking #가지치기 by 코딩랩 CodingLab](https://www.youtube.com/watch?v=ltm-JX5R1pA)
