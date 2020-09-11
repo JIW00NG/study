@@ -43,7 +43,7 @@
 ![unnamed](https://user-images.githubusercontent.com/56468120/92909129-d02f7e80-f461-11ea-9a4b-a27cf919c5c5.png)
 
 - C
-```
+```C
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -97,7 +97,7 @@ int main(void) {
 ```
 
 - python
-```
+```python
 import sys
 
 vx = [0] * (15 + 1)
