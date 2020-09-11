@@ -17,7 +17,7 @@
 #### 출력
 - 첫째 줄에 퀸 N개를 서로 공격할 수 없게 놓는 경우의 수를 출력한다.
 #### 알고리즘 분류
-- 브루트포스 알고리즘
+- [부르트 포스 (Brute Force, Naive Search)](https://gusdnd852.tistory.com/167?category=748315)
 - 백트래킹
 <br><br>
 
