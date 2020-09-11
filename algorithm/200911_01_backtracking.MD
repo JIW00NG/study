@@ -1,5 +1,4 @@
 ## 백트래킹 (BackTracking)
-<br><br>
 
 간단하게 dfs + 가지치기
 
