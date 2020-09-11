@@ -42,9 +42,58 @@
 
 ![unnamed](https://user-images.githubusercontent.com/56468120/92909129-d02f7e80-f461-11ea-9a4b-a27cf919c5c5.png)
 
-- java
+- C
 ```
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
 
+using namespace std;
+
+int N;
+int vx[15 + 1], vy[15 + 1];
+
+int go(int y, int x) {
+
+	//가지치기(backtracking)
+	for (int i = 0; i < y; i++) {
+		//직선겹침
+		if (y == vy[i]) {
+			return 0;
+		}
+		if (x == vx[i]) {
+			return 0;
+		}
+		if (abs(x - vx[i]) == abs(y - vy[i])) {
+			return 0;
+		}
+	}
+
+	//종료조건
+	if (y == N - 1) {
+		//말단에서 퀸 배열이 성공적인지 체크
+		//만약 성공적이면 리턴 1
+		return 1;
+	}
+
+	//말의 위치 기억
+	vy[y] = y, vx[x] = x;
+
+	int r = 0;
+	for (int i = 0; i < N; i++) {
+		r += go(y + 1, i);
+	}
+}
+
+int main(void) {
+	scanf("%d", &N);
+	int r = 0;
+	for (int i = 0; i < N; i++) {
+		r += go(0, 1);
+	}
+	printf("%d\n", r);
+	return 0;
+}
 ```
 
 - python
