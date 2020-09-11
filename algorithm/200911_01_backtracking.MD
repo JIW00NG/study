@@ -20,7 +20,12 @@ dfs란 재귀로 문제를 푸는 것을 의미
 #### 알고리즘 분류
 - [부르트 포스](https://gusdnd852.tistory.com/167?category=748315)
 - [백트래킹]()
-<br><br>
+#### 풀이
+
+- java
+```
+
+```
 
 ### Reference
   [N-Queen 알고리즘문제풀이](https://www.youtube.com/watch?v=ltm-JX5R1pA)
