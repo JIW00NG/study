@@ -80,8 +80,50 @@
 ![image](https://user-images.githubusercontent.com/56468120/93440055-3efd5380-f90a-11ea-8e19-551f0360bfce.png)
 <br></br>
 
+#### 조인
+- 두 릴레이션의 연관된 투플들을 결합하는 연산자
+- 매주 중요
+- 세타 조인(theta join), 동등 조인(equijoin), 자연 조인(natural join), 외부 조인(outer join), 세미 조인(semijoin) 이 있다.(앞 3개가 일반적)
+- 조인 한다는 것은 두 릴레이션의 공통 요인으로 묶는 것
+##### 세타조인
+- 세타연산자(=,<>,<=,<,>=,>) 중 하나로 표현하는 조인 연산
+
+##### 동등조인
+- 세타조인에서 세타연산자가 = 인 조인
+![image](https://user-images.githubusercontent.com/56468120/93446521-46bdf780-f90c-11ea-86bc-9405216a3742.png)
+
+##### 자연조인
+- 중복되는 속성에서 하나를 제외하는 조인
+- 실제로 가장 많이 사용
+![image](https://user-images.githubusercontent.com/56468120/93446771-90a6dd80-f90c-11ea-88fd-991fc6f10dd8.png)
+<br></br>
+
+##### 외부조인
+- 오른쪽/왼쪽/완전 외부 조인 할 떄 오른쪽/왼쪽/양쪽을 모두 포함시키고 조인을 하는 것
+![image](https://user-images.githubusercontent.com/56468120/93450146-956d9080-f910-11ea-82f3-7ab700aea56f.png)
+![image](https://user-images.githubusercontent.com/56468120/93450180-a1595280-f910-11ea-8fd6-2536d496d40c.png)
+![image](https://user-images.githubusercontent.com/56468120/93450221-aae2ba80-f910-11ea-83ae-68cb3cb2ac44.png)
+
 #### 디비전
-- 
+- 차수가 n+m인 릴레이션 R(A1, A2, ..., An, B1, B2, ..., Bm)과 차수가 m인 릴레이션 S(B1, B2, ..., Bm)의 디비전 R ÷ S는 차수가 n이고, S에 속하는 모든 투플 u에 대하여 투플 tu(투플 t와 투플 u을 결합한 것)가 R에 존재하는 투플 t들의 집합
+- 뒤쪽 릴레이션의 모든 투플을 갖는 A의 투플을 찾는 연산
+![image](https://user-images.githubusercontent.com/56468120/93447122-057a1780-f90d-11ea-82f3-ccc7b4d3fbda.png)
+#### 관계 대수 질의의 예
+![image](https://user-images.githubusercontent.com/56468120/93447643-98b34d00-f90d-11ea-87e7-ac8308f4fd1d.png)
+<br></br>
 
+#### 관계 대수의 한계
+- 산술 연산 불가
+- 집단 함수(aggregate function) 지원 안함
+- 정렬 불가
+- 관계 대수는 검색연산만 되어 있어 DB 수정 불가
+이러한 한계 떄문에 추가된 관계 대수 연산자가 있다.
+  - 집단 함수
+  ![image](https://user-images.githubusercontent.com/56468120/93449279-83d7b900-f90f-11ea-9677-14a59ecee641.png)
 
- 
+  - 그룹화
+  ![image](https://user-images.githubusercontent.com/56468120/93449331-92be6b80-f90f-11ea-94e1-33275bc33ea0.png)
+   
+   - 디스크에 저장된 데이터를 모두 읽어 sort하고 그룹화 하고 평균을 내야 하기 때문에 오래걸린다.
+
+매번 database를 수작업으로 업데이트 하는 것이 오래걸리는 등의 문제로 분석을 온라인으로 realtime으로 하는 것이 필요하여 onlab이 등장하였다.
