@@ -39,7 +39,7 @@
 
 - 필수적인 연산자란 cpu가 바로 처리할 수 있는 명령어로 꼭 있어야 하는 명령어이다.
 - 편의를 위해 유도된 연산자란 필수 연산자를 이용하여 정의 할 수 있는 연산자 이다. 이를 만드는 이유는 편의를 위해 만들었다. (function과 비슷하다고 보면 된다.)
-- 임의의 질의어가 적어도 필수연산자 5개로 표현할 수 있으면 <bold>관계적으로 완전(relationally complete)<bold>하다고 한다.
+- 임의의 질의어가 적어도 필수연산자 5개로 표현할 수 있으면 <h5>관계적으로 완전(relationally complete)<h5>하다고 한다.
 <br></br>
 
 ![relational algebra](https://user-images.githubusercontent.com/56468120/93436771-2ee37500-f906-11ea-9210-be0922750050.png)
